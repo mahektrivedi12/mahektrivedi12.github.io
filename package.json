@@ -1,0 +1,13 @@
+{
+  "name": "mahek-trivedi-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mahek Trivedi's static personal portfolio",
+  "type": "module",
+  "scripts": {
+    "check": "node --check script.js && node scripts/check-site.mjs",
+    "build": "npm run check && node scripts/build.mjs",
+    "preview": "python -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  },
+  "engines": { "node": ">=22" }
+}
